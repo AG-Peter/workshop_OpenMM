@@ -22,7 +22,7 @@ conda activate OPS
 ```bash
 # For Mac OS X, substitute `MacOSX` for `Linux` below
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-#bash -b ./Miniconda3-latest-Linux-x86_64.sh -p $HOME/miniconda
+bash -b ./Miniconda3-latest-Linux-x86_64.sh -p $HOME/miniconda
 ```
 
 ## create slides
