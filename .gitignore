@@ -1,3 +1,7 @@
+# DCD and csv
+*.dcd
+*.csv
+
 # Jupyter-notebook
 .ipynb_checkpoints/
 # PyCharm
