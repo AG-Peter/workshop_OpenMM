@@ -2,6 +2,13 @@
 OpenMM workshop
 
 # HowTo
+
+## Start tutorials
+If `nglview` does not show anything start `jupyter-notebook` with
+```bash
+jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000
+```
+
 ## Install environment
 
 If you have anaconda just run the following commands, otherwise download `ANACONDA` or  `miniconda` (e.g see below).
