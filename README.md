@@ -18,11 +18,26 @@ bash install_workshop.sh
 ```
 
 or type
-```
+```bash
 source ~/anaconda3/bin/activate
 conda create -n OPS -c omnia openpathsampling nbconvert notebook &
                     -c conda-forge jupyter_nbextensions_configurator jupyter_contrib_nbextensions
 conda activate OPS
+
+# activate javascript
+jupyter-nbextension enable --py --sys-prefix widgetsnbextension
+jupyter-nbextension enable nglview --py --sys-prefix
+
+```
+
+or us the `conda_env.yml` with
+```bash
+source ~/anaconda3/bin/activate
+conda env create -n OPS -f conda_env.yml
+
+# activate javascript
+jupyter-nbextension enable --py --sys-prefix widgetsnbextension
+jupyter-nbextension enable nglview --py --sys-prefix
 ```
 
 ### Install Miniconda
