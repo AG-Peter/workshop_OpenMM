@@ -61,13 +61,13 @@ Simulate a cube of particles and reverse the velocities after some time so it re
 * ideal gas: reversible integrator
 * real gas: reversible integrator
 
-## harmonic_oscillator_extract_thermodynamics.ipynb
+## `harmonic_oscillator_extract_thermodynamics.ipynb`
 
 In this notebook we use a predefined test system and show how we can extract thermodynamic informations from OpenMM.
 
 The test system of choice is a diatom argon.
 
-## Targets
+### Targets
 * learn how to use `openmmtools.testsystems.Diatom`
 * learn how to extract different properties during a simulation run
 * learn how to calculate the `temperature` and the `kinetic energy` by your self
