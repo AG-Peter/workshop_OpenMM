@@ -45,6 +45,18 @@ In this notebook we use the Lennard-Jones toysystem we created in `lennard_jones
 
 In this notebook we use the Lennard-Jones toysystem we created in `lennard_jones_toysystem.ipynb` to play around a bit and learn something about the time reversibility of integrators.
 
+Simulate a cube of particles and reverse the velocities after some time so it returns to the original state.
+
+```
++----------+      +----------+      +----------+
+|          |  t   |   X   X  | -t   |          |
+|    XX    |  =>  |          |  =>  |    XX    |
+|    XX    |      |    X     |      |    XX    |
+|          |      |  X       |      |          |
++----------+      +----------+      +----------+
+```
+
 ### Targets
+* create cube of gas molecules
 * ideal gas: reversible integrator
 * real gas: reversible integrator
