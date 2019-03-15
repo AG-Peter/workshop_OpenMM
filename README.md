@@ -25,17 +25,21 @@ conda create -n OPS -c omnia openpathsampling nbconvert notebook &
 conda activate OPS
 
 # activate javascript
+jupyter nbextension install widgetsnbextension --py --sys-prefix
 jupyter-nbextension enable --py --sys-prefix widgetsnbextension
 jupyter-nbextension enable nglview --py --sys-prefix
-
 ```
 
 or us the `conda_env.yml` with
 ```bash
 source ~/anaconda3/bin/activate
 conda env create -n OPS -f conda_env.yml
+conda activate OPS
+
+echo $CONDA_PREFIX
 
 # activate javascript
+jupyter nbextension install widgetsnbextension --py --sys-prefix
 jupyter-nbextension enable --py --sys-prefix widgetsnbextension
 jupyter-nbextension enable nglview --py --sys-prefix
 ```
